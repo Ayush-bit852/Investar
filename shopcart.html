@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shopcart.css">
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js">
+        var options = {
+            "key": "rzp_test_WWeWqbVeNrplMv",
+            "amount": 100, // amount in the smallest currency unit (e.g., paise for INR)
+            "currency": "INR",
+            "name": "Your Company Name",
+            "description": "Purchase Description",
+            "image": "https://example.com/your_logo.png",
+            "order_id": "order_123456",
+            "handler": function (response){
+                alert(response.razorpay_payment_id);
+                alert(response.razorpay_order_id);
+                alert(response.razorpay_signature);
+            },
+            "prefill": {
+                "name": "Your Name",
+                "email": "youremail@example.com",
+                "contact": "Your Contact Number"
+            },
+            "notes": {
+                "address": "Your Address"
+            },
+            "theme": {
+                "color": "#F37254"
+            }
+        };
+    
+        var rzp1 = new Razorpay(options);
+    
+        document.getElementById('payButton').onclick = function(){
+            rzp1.open();
+        };
+    </script>
+    
+
+    
+ 
+
+</head>
+<body class="">
+    <div class="container">
+        <header>
+            <h2><a href="index.html" class="back-button">
+                <!-- You can use an image or simply text for the back button -->
+                Home
+            </a></h2>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <h1>Explore</h1>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <h1>Cart</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <a href="payment.html"><div class="total">0 </div> </a>
+          
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <script src="shopcart.js"></script>
+
+   
+</body>
+</html>

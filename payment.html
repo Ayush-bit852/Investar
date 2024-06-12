@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Payment gateway form design in Hindi</title>
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <style>
+        /* Additional CSS for the back button */
+        .back-button {
+			color: black;
+			size: 50px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a href="shopcart.html" class="back-button">
+        <!-- You can use an image or simply text for the back button -->
+        Cancel
+    </a></h1>
+
+    <header>
+        <div class="container">
+            <div class="left">
+                <h3>BILLING ADDRESS</h3>
+                <form>
+                    Full name
+                    <input type="text" name="" placeholder="Enter name">
+                    Email
+                    <input type="text" name="" placeholder="Enter email">
+
+                    Address
+                    <input type="text" name="" placeholder="Enter address">
+
+                    City
+                    <input type="text" name="" placeholder="Enter City">
+                    <div id="zip">
+                        <label>
+                            State
+                            <select>
+                                <option>Choose State..</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chhattisgarh</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Odisha</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Telangana</option>
+                                <option>Tripura</option>
+                                <option>Uttar Pradesh</option>
+                                <option>Uttarakhand</option>
+                                <option>West Bengal</option>
+
+                            </select>
+                        </label>
+                        <label>
+                            Zip code
+                            <input type="number" name="" placeholder="Zip code">
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <h3>PAYMENT</h3>
+                <form>
+                    Accepted Card <br>
+                    <img src="image/card1.png" width="100">
+                    <img src="image/card2.png" width="50">
+                    <br><br>
+
+                    Credit card number
+                    <input type="text" name="" placeholder="Enter card number">
+
+                    Exp month
+                    <input type="text" name="" placeholder="Enter Month">
+                    <div id="zip">
+                        <label>
+                            Exp year
+                            <select>
+                                <option>Choose Year..</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                            </select>
+                        </label>
+                        <label>
+                            CVV
+                            <input type="number" name="" placeholder="CVV">
+                        </label>
+                    </div>
+                </form>
+                <input type="submit" name="" value="Proceed to Checkout">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

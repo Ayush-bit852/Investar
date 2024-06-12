@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login - Finbest</title>
+    <meta name="description" content="Description of the website" />
+    <meta property="og:title" content="Login - Finbest" />
+    <meta property="og:description" content="Description of the website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./login.css" rel="stylesheet" />
+
+      <div class="login-container">
+        <div class="login-header">
+          <div class="login-heading">
+            <div id="notifcation" class="login-notification">
+              <div
+                class="announcement-announcement announcement-root-class-name2"
+              >
+                <span class="announcement-title">
+                  <span>Latest collection launched!</span>
+                </span>
+                <div class="announcement-button">
+                  <span class="announcement-button-text">
+                    <span>Check it out -&gt;</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <nav class="navbar-navbar">
+              <img
+                alt="image"
+                src="public/logo-200h.png"
+                class="navbar-image"
+              />
+              <img
+                alt="image"
+                src="public/name-200h.png"
+                class="navbar-image1"
+              />
+              <div class="navbar-desktop">
+                <div class="navbar-container">
+                  <div class="navbar-main">
+                    <div class="navbar-branding"></div>
+                    <div class="navbar-links">
+                      <a href="index.html" class="link"><span>Home</span></a>
+                      <a href="index.html" class="link"><span>Explore</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar-quick-actions">
+                  <a href="login.html" class="link navbar-log-in">Log in</a>
+                  <a href="sign-up.html" class="navbar-navlink">
+                    <div class="navbar-sign-up-btn">
+                      <span class="navbar-sign-up">Sign up</span>
+                    </div>
+                  </a>
+                  <img
+                    id="open-mobile-menu"
+                    alt="pastedImage"
+                    src="public/pastedimage-8o98.svg"
+                    class="navbar-hamburger-menu"
+                  />
+                </div>
+              </div>
+              <div id="mobile-menu" class="navbar-mobile">
+                <div class="navbar-top">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                    class="navbar-image2"
+                  />
+                  <svg
+                    id="close-mobile-menu"
+                    viewBox="0 0 1024 1024"
+                    class="navbar-icon"
+                  >
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="navbar-links1">
+                  <a href="index.html" class="navbar-navlink1">
+                    <span>Features</span>
+                  </a>
+                  <a href="index.html" class="navbar-navlink2">
+                    <span>How it works</span>
+                  </a>
+                  <a href="index.html" class="navbar-navlink3">
+                    <span>Prices</span>
+                  </a>
+                  <a href="index.html" class="navbar-navlink4">
+                    <span>Contact</span>
+                  </a>
+                  <div class="navbar-buttons">
+                    <a href="index.html" class="navbar-navlink5">
+                      <div class="navbar-btn">
+                        <span class="navbar-text"><span>Log in</span></span>
+                      </div>
+                    </a>
+                    <a href="index.html" class="navbar-navlink6">
+                      <div class="navbar-btn1">
+                        <span class="navbar-text1"><span>Sign up</span></span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar-menu-code">
+                <script>
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu');
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu');
+                  const openButton = document.querySelector('#open-mobile-menu');
+
+                  if (mobileMenu && closeButton && openButton) {
+                    // On openButton click, set the mobileMenu position left to -100vw
+                    openButton.addEventListener('click', function () {
+                      mobileMenu.style.transform = 'translateX(0%)';
+                    });
+
+                    // On closeButton click, set the mobileMenu position to 0vw
+                    closeButton.addEventListener('click', function () {
+                      mobileMenu.style.transform = 'translateX(100%)';
+                    });
+                  }
+                </script>
+              </div>
+            </nav>
+          </div>
+          <div class="login-content">
+            <div class="login-container1">
+              <div class="login-container2"></div>
+            </div>
+            <h1 class="login-text">Log in</h1>
+            <input type="text" required="" class="login-textinput input" />
+            <input type="text" required="" class="login-textinput1 input" />
+            <span class="login-text1">Email</span>
+            <span class="login-text2">Password</span>
+            <img src="public/login-700w.png" alt="image" class="login-image" />
+            <div class="login-hero-buttons"></div>
+            <button type="button" class="login-button button">Log in</button>
+            <span class="login-text3">Don't have a account?</span>
+            <a href="sign-up.html" class="login-navlink">Sign up</a>
+          </div>
+          
+          <div class="login-hero">
+            <div class="login-images">
+              <div class="login-column"></div>
+              <div class="login-column1"></div>
+              <div class="login-column2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="login-sections"></div>
+        <div class="login-banner-container"></div>
+        <div class="login-get-started">
+          <div class="login-content1">
+            <div class="login-heading1">
+              <h2 class="login-text4">Get started with Investor now!</h2>
+            </div>
+            <div class="login-hero-buttons1">
+              <div class="login-ios-btn">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-zmzg.svg"
+                  class="login-apple"
+                />
+                <span class="login-caption">Download for iOS</span>
+              </div>
+              <div class="login-android-btn">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-ld65.svg"
+                  class="login-android"
+                />
+                <span class="login-caption1">Download for Android</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-footer">
+          <div class="footer-content">
+            <div class="footer-information">
+              <div class="footer-heading">
+                <div class="footer-container">
+                  <div class="footer-container1">
+                    <div class="footer-container2">
+                      <img
+                        alt="image"
+                        src="public/logo-200h.png"
+                        class="footer-image"
+                      />
+                    </div>
+                  </div>
+                  <img
+                    alt="image"
+                    src="public/name-200h.png"
+                    class="footer-image1"
+                  />
+                </div>
+              </div>
+              <div class="footer-socials">
+                <div class="social-social social-root-class-name">
+                  <img
+                    alt="pastedImage"
+                    src="public/pastedimage-9nha.svg"
+                    class="social-insider"
+                  />
+                </div>
+                <div class="social-social social-root-class-name1">
+                  <img
+                    alt="pastedImage"
+                    src="public/pastedimage-k0l6.svg"
+                    class="social-insider"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="footer-links"></div>
+          </div>
+          <span class="footer-text">
+            <span>© 2024 InveStar. All Rights Reserved.</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
